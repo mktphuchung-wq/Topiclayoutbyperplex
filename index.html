@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Văn Hóa Polynesia, Melanesia & Micronesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Khám Phá Văn Hóa Đại Dương</h1>
+            <p class="hero-subtitle">Hành trình qua Polynesia, Melanesia & Micronesia</p>
+            <a href="#explore" class="hero-cta">Khám Phá Ngay</a>
+        </div>
+    </section>
+
+    <!-- PAGE HEADER -->
+    <div class="container">
+        <div class="page-header">
+            <span class="badge-topic">Culture</span>
+            <h2 class="page-title">Văn Hóa Đại Dương</h2>
+            <p class="page-description">Khám phá những nền văn hóa độc đáo của các quốc đảo Thái Bình Dương, từ điệu nhảy Hula đến nghệ thuật xăm mình Polynesia.</p>
+        </div>
+
+        <!-- POLYNESIA SECTION -->
+        <section id="polynesia" class="region-section">
+            <div class="section-header">
+                <h2>Polynesia</h2>
+
+                <!-- Country Menu -->
+                <div class="country-filter">
+                    <button class="filter-btn active" onclick="updateUI('Polynesia', 'all')">Tất cả</button>
+                    <button class="filter-btn" onclick="updateUI('Polynesia', 'Hawaii')">Hawaii</button>
+                    <button class="filter-btn" onclick="updateUI('Polynesia', 'New Zealand')">New Zealand</button>
+                    <button class="filter-btn" onclick="updateUI('Polynesia', 'Samoa')">Samoa</button>
+                    <button class="filter-btn" onclick="updateUI('Polynesia', 'Tahiti')">Tahiti</button>
+                </div>
+
+                <!-- Dynamic Content -->
+                <div class="dynamic-content">
+                    <h3 id="title-polynesia" class="content-title">Polynesia Blogs</h3>
+                    <p id="desc-polynesia" class="region-desc">Đang tải mô tả...</p>
+                    <a id="link-polynesia" href="#" class="view-all-link">Xem tất cả bài viết →</a>
+                </div>
+            </div>
+
+            <!-- Posts Grid -->
+            <div id="grid-polynesia" class="post-grid"></div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- MELANESIA SECTION -->
+        <section id="melanesia" class="region-section">
+            <div class="section-header">
+                <h2>Melanesia</h2>
+
+                <!-- Country Menu -->
+                <div class="country-filter">
+                    <button class="filter-btn active" onclick="updateUI('Melanesia', 'all')">Tất cả</button>
+                    <button class="filter-btn" onclick="updateUI('Melanesia', 'Fiji')">Fiji</button>
+                    <button class="filter-btn" onclick="updateUI('Melanesia', 'Vanuatu')">Vanuatu</button>
+                    <button class="filter-btn" onclick="updateUI('Melanesia', 'Papua New Guinea')">Papua New Guinea</button>
+                </div>
+
+                <!-- Dynamic Content -->
+                <div class="dynamic-content">
+                    <h3 id="title-melanesia" class="content-title">Melanesia Blogs</h3>
+                    <p id="desc-melanesia" class="region-desc">Đang tải mô tả...</p>
+                    <a id="link-melanesia" href="#" class="view-all-link">Xem tất cả bài viết →</a>
+                </div>
+            </div>
+
+            <!-- Posts Grid -->
+            <div id="grid-melanesia" class="post-grid"></div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- MICRONESIA SECTION -->
+        <section id="micronesia" class="region-section">
+            <div class="section-header">
+                <h2>Micronesia</h2>
+
+                <!-- Country Menu -->
+                <div class="country-filter">
+                    <button class="filter-btn active" onclick="updateUI('Micronesia', 'all')">Tất cả</button>
+                    <button class="filter-btn" onclick="updateUI('Micronesia', 'Palau')">Palau</button>
+                    <button class="filter-btn" onclick="updateUI('Micronesia', 'Guam')">Guam</button>
+                    <button class="filter-btn" onclick="updateUI('Micronesia', 'Yap')">Yap</button>
+                </div>
+
+                <!-- Dynamic Content -->
+                <div class="dynamic-content">
+                    <h3 id="title-micronesia" class="content-title">Micronesia Blogs</h3>
+                    <p id="desc-micronesia" class="region-desc">Đang tải mô tả...</p>
+                    <a id="link-micronesia" href="#" class="view-all-link">Xem tất cả bài viết →</a>
+                </div>
+            </div>
+
+            <!-- Posts Grid -->
+            <div id="grid-micronesia" class="post-grid"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
